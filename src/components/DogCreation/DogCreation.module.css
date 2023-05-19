@@ -1,0 +1,198 @@
+.mainContainerCreation {
+    margin-top: 2%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #282c34;
+    box-shadow: 6px 7px 8px -6px rgba(69, 69, 69, 0.7);
+    border-radius: 15px;
+    color: white;
+  }
+  
+  .formContainer {
+    width: 100%;
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  form{
+      width: 650px;
+  }
+  .button {
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #646464;
+  }
+  .button:hover{
+    background-color: #3e8e41
+  }
+  .button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #646464;
+    transform: translateY(4px);
+  }
+  .buttonCancel {
+    display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #e93e3e;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #646464;
+  margin-right: 15px;
+  }
+  .buttonCancel:hover{
+    background-color: #943e3e
+  }
+  .buttonCancel:active {
+    background-color: #e93e3e;
+    box-shadow: 0 5px #646464;
+    transform: translateY(4px);
+  }
+  
+  .Section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    margin: 8px;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 15px;
+    gap: 5px;
+    box-shadow: 6px 7px 8px -6px rgba(69, 69, 69, 0.7);
+  }
+  
+  .sidebar_box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .sidebar_box > h4 {
+    width: 100%;
+  }
+  .selectedItems {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: baseline;
+    background-color: rgba(255, 255, 255, 0.281);
+    border-radius: 15px;
+    gap: 5px;
+    margin: 5px 8px;
+    padding: 3px 10px;
+    cursor: pointer;
+  }
+  .selectedItems > button {
+      width: 25px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: transparent;
+  }
+  label {
+    width: 100%;
+  }
+  input {
+    width: 100%;
+    line-height: 1.8;
+  }
+  input::placeholder {
+    color: rgb(151, 151, 151);
+  }
+  .error {
+    font-size: 10px;
+    color: red;
+  }
+  .buttonSection {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  option {
+    line-height: 2;
+  }
+  .styled_select {
+    width: 240px;
+    height: 34px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+  }
+  
+  .form__group {
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 50%;
+  }
+  .form__field {
+    font-family: inherit;
+    width: 200%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  .form__field::placeholder {
+    color: transparent;
+  }
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 1.3rem;
+    cursor: text;
+    top: 20px;
+  }
+  .form__label {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #9b9b9b;
+  }
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #11998e, #38ef7d);
+    border-image-slice: 1;
+  }
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: -10px;
+    display: block;
+    transition: 0.2s;
+    font-size: 1rem;
+    color: #11998e;
+    font-weight: 700;
+  }
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
